@@ -3,6 +3,7 @@ require 'rulers/routing'
 require 'rulers/util'
 require 'rulers/dependencies'
 require 'rulers/controller'
+require 'rulers/my_model'
 
 module Rulers
   class Application
