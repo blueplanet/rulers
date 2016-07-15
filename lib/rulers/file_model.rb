@@ -13,6 +13,11 @@ module Rulers
         @hash = MultiJson.load(obj)
       end
 
+      def self.all
+        files = Dir["db/quotes/*.json"]
+        files.map { |f| FileModel.new f }
+      end
+
       def [](name)
         @hash[name.to_s]
       end
